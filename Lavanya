@@ -1,0 +1,10 @@
+def uppercase(func):
+    def display():
+        return func().upper()
+    return display
+
+@uppercase
+def example():
+    return "welcome to vglug"
+
+print(example())
